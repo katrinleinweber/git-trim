@@ -262,7 +262,7 @@ pub fn print_summary(plan: &TrimPlan, repo: &Repository) -> Result<()> {
     }
 
     if !plan.skipped.is_empty() {
-        println!("  Some branches are skipped. Consider following to scan them:");
+        println!("  Some branches are skipped. Ensure that they are scanned instead with:");
 
         let tracking = plan
             .skipped
